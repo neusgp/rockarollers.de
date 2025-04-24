@@ -11,8 +11,11 @@ add_action('wp_enqueue_scripts', 'rockarollers2025_files');
 function rockarollers2025_features()
 {
     //register main menu
-    register_nav_menu('header', '2025 Header');
-    register_nav_menu('social', '2025 Social');
+    register_nav_menu('header', 'Main');
+    register_nav_menu('social', 'Social');
+    register_nav_menu('links', 'Interesting Links');
+    register_nav_menu('presse', 'Presse');
+    register_nav_menu('footer', 'Footer');
 }
 
 add_action('after_setup_theme', 'rockarollers2025_features');
