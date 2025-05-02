@@ -3,5 +3,14 @@
 }
 
 a {
-  text-decoration: none;
+  all: unset;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
 }
