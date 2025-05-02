@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+  height: 100px;
+
+  background: rgba(0, 0, 0, 0.64);
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+}
+
+.logo-section {
+  display: flex;
+  gap: 20px;
+}
+
+.social-header {
+  position: relative;
+  left: 180px;
+}
+
+.main-menu-header {
+  display: flex;
+  gap: 64px;
+  text-transform: uppercase;
+}
