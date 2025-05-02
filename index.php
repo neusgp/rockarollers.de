@@ -1,3 +1,1 @@
-<?php get_header(); ?>
-<div id='content'></div>
-<?php get_footer(); ?>
+<!-- this page is meant to be the blog page. -->
