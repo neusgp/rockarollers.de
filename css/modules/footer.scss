@@ -1,0 +1,43 @@
+@use "constants" as styles;
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-footer {
+  display: flex;
+  padding: 46px 40px;
+  background: styles.$yellow;
+  font-size: styles.$font-md;
+  gap: 80px;
+}
+
+.menu-section-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#menu-presse,
+#menu-interesting-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.credits-footer {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  background: styles.$dark-grey;
+  color: white;
+  padding: 20px 40px;
+  font-size: styles.$font-sm;
+}
+
+.credits-menu-footer {
+  display: flex;
+  gap: 40px;
+}
