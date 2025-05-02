@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class='credits-footer'>
-        <p>© 2025 Neus Garcia für Rockarollers</p>
+        <p>© 2025 Neus Garcia für Roller Derby Karlsruhe</p>
         <?php
         wp_nav_menu(array(
             'depth' => 1,

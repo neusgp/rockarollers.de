@@ -10,12 +10,18 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: "Roboto";
 }
 
-.content {
+#content {
+  display: flex;
   flex-grow: 1;
 }
