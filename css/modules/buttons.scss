@@ -1,0 +1,18 @@
+@use "constants" as styles;
+
+@mixin button {
+  padding: 22px 32px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: styles.$soft-black;
+}
+
+.primary-button-white {
+  @include button;
+  background-color: white;
+}
+
+.primary-button-yellow {
+  @include button;
+  background-color: styles.$yellow;
+}

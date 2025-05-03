@@ -4,6 +4,7 @@
 
 a {
   all: unset;
+  box-sizing: border-box !important;
 }
 
 a:hover {
