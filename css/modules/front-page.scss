@@ -29,6 +29,24 @@
   gap: 20px;
 }
 
+#news-section h2 {
+  text-align: center;
+}
+
+#team-section {
+  background-color: styles.$light-yellow;
+}
+#events-section {
+  background-color: black;
+}
+#events-section h2 {
+  color: white;
+  text-align: end;
+}
+#sponsors-section h2 {
+  text-align: center;
+}
+
 .yellow-highlight {
-  color: styles.$yellow;
+  color: styles.$yellow !important;
 }
