@@ -13,6 +13,7 @@
     ?>
 </div>
 <div class='section'>
+    <h2 class='news'>news</h2>
     <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
 </div>
 </div>
