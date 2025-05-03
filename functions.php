@@ -19,3 +19,47 @@ function rockarollers2025_features()
 }
 
 add_action('after_setup_theme', 'rockarollers2025_features');
+
+function member_post_types() {}
+
+function rockarollers2025_post_types()
+{
+    register_post_type('event', array(
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Events',
+            'add_new_item' => 'Add new Event',
+            'edit_item' => 'Edit Event',
+            'all_items' => 'All Events',
+            'singular name' => 'Event'
+        ),
+        'menu_icon' => 'dashicons-calendar'
+    ));
+    register_post_type('member', array(
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Members',
+            'add_new_item' => 'Add new Member',
+            'edit_item' => 'Edit Member',
+            'all_items' => 'All Members',
+            'singular name' => 'Member'
+        ),
+        'menu_icon' => 'dashicons-groups'
+    ));
+    register_post_type('sponsor', array(
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Sponsors',
+            'add_new_item' => 'Add new Sponsor',
+            'edit_item' => 'Edit Sponsor',
+            'all_items' => 'All Sponsors',
+            'singular name' => 'sponsor'
+        ),
+        'menu_icon' => 'dashicons-awards'
+    ));
+}
+
+add_action('init', 'rockarollers2025_post_types');
