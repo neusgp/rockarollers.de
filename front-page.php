@@ -12,5 +12,8 @@
     endif;
     ?>
 </div>
+<div class='section'>
+    <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+</div>
 </div>
 <?php get_footer(); ?>

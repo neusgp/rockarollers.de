@@ -1,0 +1,18 @@
+#sbi_images {
+  justify-content: center !important;
+  gap: 40px !important;
+}
+
+#sb_instagram .sbi_feed {
+  display: grid !important;
+  grid-template-columns: auto auto auto !important;
+}
+
+.sbi_item {
+  display: flex !important;
+  justify-content: center !important;
+  width: min-content !important;
+}
+
+//TODO: grid wrap! -> posts should appear under
+//TODO: responsiveness
