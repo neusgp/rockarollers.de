@@ -1,0 +1,27 @@
+.events-preview-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 300px;
+  gap: 24px;
+}
+
+.event-preview {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.event-preview-info {
+  width: 100%;
+}
+
+.event-preview-date,
+.event-preview-info {
+  background-color: white;
+}
+
+.event-preview-place-time {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
