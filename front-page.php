@@ -25,6 +25,32 @@
         </div>
         <div id='events-section' class='section'>
             <h2><?php the_field('events_section_title'); ?> <span class='yellow-highlight'><?php the_field('events_section_year'); ?></span></h2>
+            <?php
+            $homePageEventList = new WP_Query(array('post_type' => 'event'));
+            if (!$homePageEventList->have_posts()) {
+            ?> <p>No events found</p>
+            <?php
+            } ?>
+            <div class='events-preview-list'>
+                <?php
+                while ($homePageEventList->have_posts()) {
+                    $homePageEventList->the_post(); ?>
+                    <div class='event-preview'>
+                        <div class='event-preview-date'>
+                            <p><?php the_field('date') ?></p>
+                        </div>
+                        <div class='event-preview-info'>
+                            <p><?php the_field('title') ?></p>
+                            <div class='event-preview-place-time'>
+                                <p><?php the_field('place') ?></p>
+                                <p><?php the_field('time') ?></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
         </div>
         <div id='sponsors-section' class='section'>
             <h2><?php the_field('sponsors_section_title'); ?></h2>
