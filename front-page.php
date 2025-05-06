@@ -37,13 +37,26 @@
                     $homePageEventList->the_post(); ?>
                     <div class='event-preview'>
                         <div class='event-preview-date'>
-                            <p><?php the_field('date') ?></p>
+                            <?php
+                            //separate month and day
+                            $date = get_field('date');
+                            $parsedDate = explode(',', $date);
+                            $stringParsedDate = implode(' ', $parsedDate);
+                            $finalParsedData = explode(' ', $stringParsedDate);
+                            ?>
+                            <div class='event-month'>
+                                <p><?php echo $finalParsedData[0] ?></p>
+                            </div>
+                            <div class='event-day'>
+                                <p><?php echo $finalParsedData[1] ?></p>
+                            </div>
+
                         </div>
                         <div class='event-preview-info'>
-                            <p><?php the_field('title') ?></p>
+                            <p class='event-preview-title'><?php the_field('title') ?></p>
                             <div class='event-preview-place-time'>
-                                <p><?php the_field('place') ?></p>
-                                <p><?php the_field('time') ?></p>
+                                <p><i class='fa fa-map-marker'></i> <?php the_field('place') ?></p>
+                                <p><i class='fa fa-clock-o'></i> <?php the_field('time') ?></p>
                             </div>
                         </div>
                     </div>
