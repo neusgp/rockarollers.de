@@ -13,14 +13,16 @@
   gap: 40px;
 
   color: white;
+  overflow: hidden;
 }
 
-.hero-background-image {
+.background-image {
   position: absolute;
   z-index: -1;
   min-width: 100%;
   min-height: 100%;
-  overflow: hidden;
+  top: 0;
+  left: 0;
 }
 
 .action-buttons-container {
@@ -37,10 +39,10 @@
   background-color: styles.$light-yellow;
 }
 #events-section {
-  background-color: black;
+  position: relative;
   gap: 40px;
+  overflow: hidden;
 }
-
 #events-section h2 {
   text-align: end;
   color: white;
