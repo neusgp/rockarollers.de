@@ -3,7 +3,7 @@
 <?php while (have_posts()) : the_post(); ?>
     <div id='content'>
         <div id='hero-section'>
-            <img class='hero-background-image' src='<?php the_field('hero_background_image'); ?>' />
+            <img class='background-image' src='<?php the_field('hero_background_image'); ?>' />
             <h1><?php the_field('hero_section_title'); ?></h1>
             <p><?php the_field('hero_section_text'); ?></p>
             <div class='action-buttons-container'>
@@ -24,6 +24,7 @@
             <div id='horizontal-scroll'></div>
         </div>
         <div id='events-section' class='section'>
+            <img class='background-image' src='<?php the_field('events_background_image'); ?>' />
             <h2><?php the_field('events_section_title'); ?> <span class='yellow-highlight'><?php the_field('events_section_year'); ?></span></h2>
             <?php
             $homePageEventList = new WP_Query(array('post_type' => 'event'));
@@ -50,7 +51,6 @@
                             <div class='event-day'>
                                 <p><?php echo $finalParsedData[1] ?></p>
                             </div>
-
                         </div>
                         <div class='event-preview-info'>
                             <p class='event-preview-title'><?php the_field('title') ?></p>
