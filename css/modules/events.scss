@@ -1,18 +1,59 @@
+@use "constants" as styles;
+
 .events-preview-list {
   display: flex;
   flex-direction: column;
-  padding: 0 300px;
+  //padding: 0 300px;
   gap: 24px;
 }
 
 .event-preview {
-  width: 100%;
+  width: 60%;
   display: flex;
   gap: 20px;
+  align-self: center;
+}
+
+.event-preview-date {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .event-preview-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  padding: 10px 24px;
+  gap: 8px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.event-month {
+  padding: 8px 0;
+  width: 100%;
+  background-color: styles.$yellow;
+  justify-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+}
+.event-day {
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.event-preview-title {
+  text-transform: uppercase;
 }
 
 .event-preview-date,
@@ -24,4 +65,9 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  gap: 46px;
+}
+
+.event-preview-place-time p {
+  font-size: styles.$font-sm !important;
 }
