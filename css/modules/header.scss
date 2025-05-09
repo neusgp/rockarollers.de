@@ -27,9 +27,18 @@ header {
   position: relative;
   left: 180px;
 }
+.social-header span {
+  width: max-content;
+  height: auto;
+  font-size: 32px;
+}
 
 .main-menu-header {
   display: flex;
   gap: 64px;
   text-transform: uppercase;
+  font-family: "Rostack";
+  font-weight: 400 !important;
+  letter-spacing: 1.5px;
+  font-size: 24px;
 }

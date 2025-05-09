@@ -9,14 +9,17 @@ footer {
   display: flex;
   padding: 46px 40px;
   background: styles.$yellow;
-  font-size: styles.$font-sm;
   gap: 80px;
 }
 
 .menu-section-footer {
   display: flex;
   flex-direction: column;
+  font-size: styles.$font-sm;
   gap: 30px;
+}
+.menu-section-footer p {
+  font-size: styles.$font-sm !important;
 }
 
 #menu-presse,
@@ -35,6 +38,10 @@ footer {
   color: white;
   padding: 20px 40px;
   font-size: styles.$font-xs;
+}
+
+.credits-footer p {
+  font-size: styles.$font-xs !important;
 }
 
 .credits-menu-footer {

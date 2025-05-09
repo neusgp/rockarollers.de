@@ -6,6 +6,10 @@
   text-transform: uppercase;
   color: styles.$soft-black;
   width: max-content;
+  transition: background-color, 0.3s;
+  font-family: "Rostack";
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .primary-button-white {
@@ -17,3 +21,10 @@
   @include button;
   background-color: styles.$yellow;
 }
+
+// .primary-button-white:hover,
+// .primary-button-yellow:hover {
+//   background-color: white;
+//   color: #9747ff;
+//   border: 2px solid #9747ff;
+// }

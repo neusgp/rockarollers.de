@@ -10,3 +10,8 @@ $white: white;
 $font-xs: 12px;
 $font-sm: 14px;
 $font-md: 18px;
+
+@mixin accent-font {
+  font-family: "Rostack";
+  letter-spacing: 4%;
+}
