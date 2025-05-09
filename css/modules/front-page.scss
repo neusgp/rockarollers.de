@@ -48,8 +48,29 @@
   color: white;
 }
 
+#sponsors-section {
+  display: flex;
+  gap: 60px;
+}
 #sponsors-section h2 {
   text-align: center;
+}
+
+.sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.sponsors-list img {
+  width: 240px;
+  height: min-content;
+  align-self: center;
+}
+
+.sponsors-section-button {
+  align-self: center;
 }
 
 .yellow-highlight {
