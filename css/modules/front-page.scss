@@ -46,9 +46,15 @@
   flex: 1;
 }
 
-#horizontal-scroll {
+.team-section-fotos {
+  position: relative;
+  width: 400px;
   flex: 2;
+}
+
+#horizontal-scroll {
   overflow: auto;
+  scrollbar-color: styles.$yellow !important;
   white-space: nowrap;
   display: flex;
   gap: 20px;
@@ -58,6 +64,28 @@
   width: 260px;
   display: inline-block;
   border-radius: 6px;
+}
+
+.scroll-icon {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  right: 0;
+  background-color: styles.$yellow;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.scroll-icon i {
+  font-weight: bold;
 }
 
 #events-section {

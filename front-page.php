@@ -26,22 +26,29 @@
                 <p><?php the_field('team_section_text'); ?></p>
                 <a href='<?php the_field('link_team_button'); ?>' class='primary-button-yellow'><?php the_field('label_team_button'); ?></a>
             </div>
-            <div id='horizontal-scroll'>
-                <?php
-                $homePageSponsorsList = new WP_Query(array('post_type' => 'member', 'posts_per_page' => 7));
-                if (!$homePageSponsorsList->have_posts()) {
-                ?> <p>No sponsors found</p>
-                <?php
-                } ?>
-                <?php
-                while ($homePageSponsorsList->have_posts()) {
-                    $homePageSponsorsList->the_post(); ?>
-                    <img class='member-foto' src='<?php the_field('foto'); ?>' />
-                <?php
-                }
-                ?>
-            <?php endwhile; ?>
+            <div class='team-section-fotos'>
+                <div class='scroll-icon'>
+                    <i class='fa fa-angle-left'></i>
+                    <i class='fa fa-angle-right'></i>
+                </div>
+                <div id='horizontal-scroll'>
+                    <?php
+                    $homePageSponsorsList = new WP_Query(array('post_type' => 'member', 'posts_per_page' => 7));
+                    if (!$homePageSponsorsList->have_posts()) {
+                    ?> <p>No sponsors found</p>
+                    <?php
+                    } ?>
+                    <?php
+                    while ($homePageSponsorsList->have_posts()) {
+                        $homePageSponsorsList->the_post(); ?>
+                        <img class='member-foto' src='<?php the_field('foto'); ?>' />
+                    <?php
+                    }
+                    ?>
+                <?php endwhile; ?>
+                </div>
             </div>
+
         </div>
         <?php while (have_posts()) : the_post(); ?>
             <!-- EVENTS -->
