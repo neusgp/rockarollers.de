@@ -36,8 +36,30 @@
 }
 
 #team-section {
+  flex-direction: row !important;
   background-color: styles.$light-yellow;
 }
+
+.team-section-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#horizontal-scroll {
+  flex: 2;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 20px;
+}
+
+.member-foto {
+  width: 260px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
 #events-section {
   position: relative;
   gap: 40px;
