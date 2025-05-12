@@ -38,12 +38,15 @@
 #team-section {
   flex-direction: row !important;
   background-color: styles.$light-yellow;
+  gap: 20px;
 }
 
 .team-section-text {
   display: flex;
   flex-direction: column;
   flex: 1;
+
+  gap: 40px;
 }
 
 .team-section-fotos {
