@@ -52,6 +52,12 @@ body {
   flex-grow: 1;
 }
 
+section {
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-family: "Rostack";
   letter-spacing: 1px;
