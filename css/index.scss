@@ -9,7 +9,7 @@
 @use "./modules/buttons.scss";
 @use "./modules/events.scss";
 @use "./modules/page.scss";
-//@use "./modules/mitmachen.scss";
+@use "./modules/mitmachen.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
@@ -79,4 +79,8 @@ h2 {
 
 p {
   font-size: styles.$font-md !important;
+}
+
+section p {
+  line-height: 1.5;
 }
