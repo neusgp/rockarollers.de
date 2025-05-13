@@ -51,11 +51,16 @@
   background-color: white;
   display: flex;
   flex-direction: inherit;
-  justify-content: space-between;
-
-  padding: 20px;
+  justify-content: space-around;
+  padding: 8px 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.training-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .training-infos p {

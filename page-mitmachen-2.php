@@ -46,14 +46,13 @@ get_header();
                         </div>
                         <div class='training-infos'>
                             <p><?php the_field('description'); ?></p>
-                            <div>
+                            <div class='training-details'>
                                 <p><i class='fa fa-clock-o'></i> <?php the_field('start_time'); ?> - <?php the_field('end_time'); ?></p>
                                 <p><i class='fa fa-map-marker'></i> <?php the_field('place'); ?></p>
                             </div>
                         </div>
                     </div>
             <?php
-
                 }
             }
             ?>
