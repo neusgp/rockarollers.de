@@ -59,39 +59,40 @@
         <div class='events-preview-list'>
             <?php
             $homePageEventList = new WP_Query(array('post_type' => 'event', 'posts_per_page' => -1));
-            if (!$homePageEventList->have_posts()) {
-            ?> <p>No events found</p>
-            <?php
-            } ?>
-            <?php
             while ($homePageEventList->have_posts()) {
-                $homePageEventList->the_post(); ?>
-                <div class='event-preview'>
-                    <div class='event-preview-date'>
-                        <?php
-                        //separate month and day
-                        $date = get_field('date');
-                        $parsedDate = explode(',', $date);
-                        $stringParsedDate = implode(' ', $parsedDate);
-                        $finalParsedData = explode(' ', $stringParsedDate);
-                        ?>
-                        <div class='event-month'>
-                            <p><?php echo $finalParsedData[0] ?></p>
+                if (!$homePageEventList->have_posts()) { ?>
+                    <p>No events found</p>
+                <?php
+                }
+                $homePageEventList->the_post();
+                if (get_field('type') === 'event') { ?>
+                    <div class='event-preview'>
+                        <div class='event-preview-date'>
+                            <?php
+                            //separate month and day
+                            $date = get_field('date');
+                            $parsedDate = explode(',', $date);
+                            $stringParsedDate = implode(' ', $parsedDate);
+                            $finalParsedData = explode(' ', $stringParsedDate);
+                            ?>
+                            <div class='event-month'>
+                                <p><?php echo $finalParsedData[0] ?></p>
+                            </div>
+                            <div class='event-day'>
+                                <p><?php echo $finalParsedData[1] ?></p>
+                            </div>
                         </div>
-                        <div class='event-day'>
-                            <p><?php echo $finalParsedData[1] ?></p>
-                        </div>
-                    </div>
 
-                    <div class='event-preview-info'>
-                        <p class='event-preview-title'><?php the_field('title') ?></p>
-                        <div class='event-preview-place-time'>
-                            <p><i class='fa fa-map-marker'></i> <?php the_field('place') ?></p>
-                            <p><i class='fa fa-clock-o'></i> <?php the_field('time') ?></p>
+                        <div class='event-preview-info'>
+                            <p class='event-preview-title'><?php the_field('title') ?></p>
+                            <div class='event-preview-place-time'>
+                                <p><i class='fa fa-map-marker'></i> <?php the_field('place') ?></p>
+                                <p><i class='fa fa-clock-o'></i> <?php the_field('time') ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
             <?php
+                }
             }
             ?>
         </div>
