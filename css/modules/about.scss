@@ -1,0 +1,41 @@
+@use "constants" as styles;
+
+#about-roller-derby,
+#about-rdk {
+  gap: 40px;
+}
+
+#about-roller-derby {
+  background-color: styles.$light-yellow;
+}
+
+.about-roller-derby-content,
+.about-rdk-content {
+  display: flex;
+  gap: 40px;
+}
+
+.about-roller-derby-content img {
+  width: 400px;
+  height: min-content;
+}
+
+.about-interesting-links {
+  margin-top: 32px;
+  display: flex;
+  gap: 40px;
+}
+
+.about-interesting-links img {
+  width: 260px;
+  transition: opacity 0.4s;
+  border-radius: 20px;
+}
+
+.about-interesting-links img:hover {
+  opacity: 70%;
+}
+
+.about-rdk-content p {
+  width: 90%;
+}
