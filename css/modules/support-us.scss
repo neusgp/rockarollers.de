@@ -1,0 +1,22 @@
+@use "constants" as styles;
+
+#sponsors-text {
+  text-align: center;
+  padding: 100px 200px !important;
+  gap: 20px;
+
+  background-color: styles.$light-yellow;
+}
+
+#sponsors-text .email {
+  font-weight: bold;
+}
+
+#sponsors-list h2 {
+  align-self: center;
+  text-align: center;
+}
+
+#sponsors-list {
+  gap: 60px;
+}
