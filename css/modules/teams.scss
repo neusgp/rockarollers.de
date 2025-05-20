@@ -1,0 +1,38 @@
+.team-links {
+  justify-items: center;
+  display: grid !important;
+  width: 100%;
+  grid-template-columns: 1fr 1fr !important;
+  grid-row: auto;
+  row-gap: 60px;
+  column-gap: 80px;
+}
+
+#team-links a {
+  width: 100%;
+  height: 250px;
+  transition: opacity 0.4s;
+
+  display: flex;
+  align-items: end;
+}
+
+#team-links a p {
+  width: 100%;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.64);
+  color: white;
+  text-transform: uppercase;
+  font-family: "Rostack", sans-serif;
+  font-size: 32px !important;
+  font-weight: 400;
+}
+
+#team-links a:hover {
+  opacity: 70%;
+}
+
+.team-link {
+  position: relative;
+  overflow: hidden;
+}
