@@ -11,7 +11,7 @@
             <h1><?php the_field('hero_section_title'); ?></h1>
             <p><?php the_field('hero_section_text'); ?></p>
             <div class='action-buttons-container'>
-                <a href='<?php the_field('link_hero_button_1'); ?>' class='primary-button-white'><?php the_field('label_hero_button_1'); ?></a>
+                <a href='<?php the_field('link_hero_button_1'); ?>/#about-roller-derby' class='primary-button-white'><?php the_field('label_hero_button_1'); ?></a>
                 <a href='<?php the_field('link_hero_button_2'); ?>' class='primary-button-yellow'><?php the_field('label_hero_button_2'); ?></a>
             </div>
     </section>
