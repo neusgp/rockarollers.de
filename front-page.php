@@ -2,8 +2,6 @@
 
 
 <div id='content'>
-    <!-- store page data into variables so that i don't need to call loops all time -->
-
     <!-- HERO -->
     <section id='hero-section'>
         <?php while (have_posts()) : the_post(); ?>
@@ -34,14 +32,14 @@
             </div>
             <div id='horizontal-scroll'>
                 <?php
-                $homePageSponsorsList = new WP_Query(array('post_type' => 'member', 'posts_per_page' => 7));
-                if (!$homePageSponsorsList->have_posts()) {
+                $homePageMembersList = new WP_Query(array('post_type' => 'member', 'posts_per_page' => -1));
+                if (!$homePageMembersList->have_posts()) {
                 ?> <p>No sponsors found</p>
                 <?php
                 } ?>
                 <?php
-                while ($homePageSponsorsList->have_posts()) {
-                    $homePageSponsorsList->the_post(); ?>
+                while ($homePageMembersList->have_posts()) {
+                    $homePageMembersList->the_post(); ?>
                     <img class='member-foto' src='<?php the_field('foto'); ?>' />
                 <?php
                 }

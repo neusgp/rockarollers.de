@@ -34,6 +34,7 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 80% !important;
   box-sizing: border-box;
 }
 
@@ -86,6 +87,6 @@ p {
   font-size: styles.$font-md !important;
 }
 
-section p {
-  line-height: 1.5;
-}
+// section p {
+//   line-height: 1.5 !important;
+// }
