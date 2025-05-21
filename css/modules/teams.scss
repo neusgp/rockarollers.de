@@ -1,3 +1,5 @@
+@use "constants" as styles;
+
 .team-links {
   justify-items: center;
   display: grid !important;
@@ -35,4 +37,22 @@
 .team-link {
   position: relative;
   overflow: hidden;
+}
+
+#team-title {
+  padding-top: 240px;
+  gap: 40px;
+}
+
+#team-members {
+  //background-color: styles.$yellow;
+}
+
+.members {
+  justify-items: center;
+  display: grid !important;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  grid-row: auto;
+  row-gap: 40px;
 }
