@@ -20,7 +20,7 @@
         ?>
         <?php
         wp_nav_menu(array(
-            'depth' => 1,
+            'depth' => 2,
             'theme_location' => 'header',
             'menu_class' => 'main-menu-header menu'
         ));
