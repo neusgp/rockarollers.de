@@ -1,16 +1,51 @@
+@use "constants" as styles;
+
 .menu {
   list-style-type: none;
 }
 
 a {
   all: unset;
+  transition: color 0.2s;
 }
 
 a:hover {
   cursor: pointer;
 }
 
+.menu-2025-main-menu-container,
+.main-menu-header,
+.menu-item {
+  height: 100%;
+}
+
 .social {
   display: flex;
   gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100px;
+  transform: translateX(-20px);
+
+  flex-direction: column;
+  gap: 22px;
+  background: black;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.main-menu-header a:hover {
+  color: styles.$yellow;
+}
+
+.show {
+  display: flex;
 }
