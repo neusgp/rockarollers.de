@@ -2,7 +2,9 @@
 
 function rockarollers2025_files()
 {
-    //load css from build folder
+    //loading js from build folder
+    wp_enqueue_script('rockarollers2025-js', get_theme_file_uri('/build/index.js'), array(), null, true);
+    //loading css from build folder
     wp_enqueue_style('rockarollers2025_styles', get_theme_file_uri('/build/index.css'));
 }
 add_action('wp_enqueue_scripts', 'rockarollers2025_files');
@@ -10,7 +12,6 @@ add_action('wp_enqueue_scripts', 'rockarollers2025_files');
 
 function rockarollers2025_features()
 {
-    //register main menu
     register_nav_menu('header', 'Main');
     register_nav_menu('social', 'Social');
     register_nav_menu('links', 'Interesting Links');
