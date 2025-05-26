@@ -10,7 +10,7 @@ get_header();
             <h2><?php the_title(); ?></h2>
         </section>
         <!-- INFOS -->
-        <section id='mitmachen-infos'>
+        <section id='infos'>
             <div>
                 <div>
                     <h2><?php the_field('mitmachen_newbiekurs_title'); ?></h2>
