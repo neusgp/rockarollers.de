@@ -34,7 +34,6 @@
 * {
   margin: 0;
   padding: 0;
-  line-height: 80% !important;
   box-sizing: border-box;
 }
 
@@ -67,20 +66,21 @@ section {
 }
 
 h1 {
-  font-family: "Rostack";
-  letter-spacing: 1px;
-  text-transform: uppercase;
   font-size: 80px !important;
   background-color: black;
-  font-weight: 400 !important;
 }
 
+h2 {
+  font-size: 60px !important;
+}
+
+h1,
 h2 {
   font-family: "Rostack";
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 60px !important;
   font-weight: 400 !important;
+  line-height: 80% !important;
 }
 
 p {
