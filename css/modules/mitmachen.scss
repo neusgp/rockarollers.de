@@ -1,11 +1,11 @@
 @use "constants" as styles;
 
-#mitmachen-infos {
+#infos {
   display: flex;
   gap: 40px;
 }
 
-#mitmachen-infos div {
+#infos div {
   display: flex;
   flex-direction: inherit;
   gap: 20px;
