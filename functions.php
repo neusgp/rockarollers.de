@@ -13,6 +13,7 @@ add_action('wp_enqueue_scripts', 'rockarollers2025_files');
 function rockarollers2025_features()
 {
     register_nav_menu('header', 'Main');
+    register_nav_menu('mobile', 'Mobile');
     register_nav_menu('social', 'Social');
     register_nav_menu('links', 'Interesting Links');
     register_nav_menu('presse', 'Presse');

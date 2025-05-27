@@ -18,11 +18,24 @@
             'menu_class' => 'social social-header menu'
         ));
         ?>
-        <?php
-        wp_nav_menu(array(
-            'depth' => 2,
-            'theme_location' => 'header',
-            'menu_class' => 'main-menu-header menu'
-        ));
-        ?>
+        <nav>
+            <?php
+            wp_nav_menu(array(
+                'depth' => 2,
+                'theme_location' => 'header',
+                'menu_class' => 'main-menu-header menu'
+            ));
+            ?>
+            <p><i class='fa fa-bars hamburger-menu-icon'></i></p>
+            <div class='mobile-menu'>
+                <i class='fa fa-close close-button'></i>
+                <?php
+                wp_nav_menu(array(
+                    'depth' => 2,
+                    'theme_location' => 'mobile',
+                    'menu_class' => 'main-menu-mobile menu'
+                ));
+                ?>
+            </div>
+        </nav>
     </header>
