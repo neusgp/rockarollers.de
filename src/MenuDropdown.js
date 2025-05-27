@@ -11,10 +11,10 @@ if (menuItems) {
 
       if (dropdown && link) {
         dropdown.classList.add("show");
-        link.classList.add("medium-yellow-highlight");
+        link.classList.add("yellow-highlight");
 
         item.addEventListener("mouseleave", () => {
-          link.classList.remove("medium-yellow-highlight");
+          link.classList.remove("yellow-highlight");
           dropdown.classList.remove("show");
         });
       }
