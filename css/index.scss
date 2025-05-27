@@ -39,6 +39,9 @@
 
 a {
   box-sizing: border-box !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 html {

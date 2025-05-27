@@ -1,7 +1,7 @@
 @use "constants" as styles;
 
 @mixin button {
-  padding: 22px 32px;
+  padding: 18px 32px;
   border-radius: 10px;
   text-transform: uppercase;
   color: styles.$soft-black;
