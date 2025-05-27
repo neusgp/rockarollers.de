@@ -1,5 +1,5 @@
 const menuItems = document.getElementsByClassName("main-menu-header-item");
-
+console.log("hello!");
 if (menuItems) {
   let dropdown;
   let link;
@@ -8,7 +8,7 @@ if (menuItems) {
     item.addEventListener("mouseenter", (e) => {
       dropdown = item.querySelector(".sub-menu");
       link = item.querySelector("a");
-
+      console.log(dropdown);
       if (dropdown && link) {
         dropdown.classList.add("show");
         link.classList.add("yellow-highlight");
