@@ -16,6 +16,16 @@
   overflow: hidden;
 }
 
+#hero-section .title {
+  text-align: center;
+  padding: 8px 16px;
+}
+
+#hero-section .text {
+  background-color: styles.$soft-black;
+  padding: 8px 16px;
+}
+
 .action-buttons-container {
   display: flex;
   align-items: center;
