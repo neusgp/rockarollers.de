@@ -28,7 +28,6 @@ get_header();
                     <p><?php the_field('officials_link_title'); ?></p>
                 </a>
             </div>
-
         </section>
     <?php endwhile; ?>
 </div>

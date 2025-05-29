@@ -15,19 +15,20 @@ get_header();
                 <div>
                     <h2><?php the_field('mitmachen_newbiekurs_title'); ?></h2>
                     <p><?php the_field('mitmachen_newbiekurs_text'); ?></p>
-                    <a href='<?php the_field('mitmachen_newbiekurs_button_link'); ?>' class='link-button'><?php the_field('mitmachen_newbiekurs_button_label'); ?></a>
+                    <a href='<?php the_field('mitmachen_newbiekurs_button_link'); ?>' class='link-button'><?php the_field('mitmachen_newbiekurs_button_label'); ?> <i class='fa fa-angle-right'></i></a>
                 </div>
                 <img src='<?php the_field('mitmachen_newbiekurs_image'); ?>' />
             </div>
             <div>
                 <h2><?php the_field('mitmachen_trainings_title'); ?> </h2>
                 <p><?php the_field('mitmachen_trainings_text'); ?></p>
-                <a href='<?php the_field('mitmachen_trainings_button_link'); ?>' class='link-button'><?php the_field('mitmachen_trainings_button_label'); ?></a>
+                <a href='mailto:<?php the_field('mitmachen_trainings_button_link'); ?>' class='link-button'><?php the_field('mitmachen_trainings_button_label'); ?> <i class='fa fa-angle-right'></i></a>
             </div>
         </section>
         <!-- TRAININGSZEITEN -->
         <section id='trainingszeiten'>
             <img class='background-image' src='<?php the_field('trainingszeiten_banner_image'); ?>' />
+            <h2><?php the_field('trainingszeiten_title'); ?></h2>
         <?php endwhile; ?>
         <?php
         $trainingEventsList = new WP_Query(array('post_type' => 'event')); ?>

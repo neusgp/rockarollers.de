@@ -13,11 +13,18 @@
 
 #trainingszeiten {
   position: relative;
+  gap: 40px;
   padding: 100px 320px !important;
+  overflow: hidden;
+}
+#trainingszeiten h2 {
+  color: white;
+  align-self: center;
 }
 
 .trainings-preview-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 

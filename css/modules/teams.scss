@@ -2,8 +2,9 @@
 
 .team-links {
   justify-items: center;
+  align-self: center;
   display: grid !important;
-  width: 100%;
+  width: 86%;
   grid-template-columns: 1fr 1fr !important;
   grid-row: auto;
   row-gap: 60px;
@@ -28,6 +29,7 @@
   font-family: "Rostack", sans-serif;
   font-size: 32px !important;
   font-weight: 400;
+  align-self: end;
 }
 
 #team-links a:hover {
@@ -42,10 +44,6 @@
 #team-title {
   padding-top: 240px;
   gap: 40px;
-}
-
-#team-members {
-  //background-color: styles.$yellow;
 }
 
 .members {

@@ -23,9 +23,12 @@
 }
 
 .link-button {
+  max-width: max-content;
+  display: flex;
+  gap: 4px;
   font-size: styles.$font-md;
-  text-decoration: underline;
   font-weight: bold;
+  border-bottom: 1px solid black;
 }
 
 // .primary-button-white:hover,
