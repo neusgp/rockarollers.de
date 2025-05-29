@@ -1,5 +1,5 @@
 const menuItems = document.getElementsByClassName("main-menu-header-item");
-console.log("hello!");
+
 if (menuItems) {
   let dropdown;
   let link;

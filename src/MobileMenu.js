@@ -5,7 +5,6 @@ hamburgerIcon.addEventListener("click", () => {
   let closeButton;
   let links;
 
-  console.log("open mobile menu");
   mobileMenu = document.querySelector(".mobile-menu");
 
   if (mobileMenu) {
