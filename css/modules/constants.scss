@@ -6,10 +6,13 @@ $soft-black: #030712;
 $dark-grey: #4b4b4b;
 $white: white;
 
-//fonts
+//font-sizes
 $font-xs: 12px;
 $font-sm: 14px;
 $font-md: 18px;
+$font-lg: 24px;
+
+$accent-font: "Rostack", sans-serif;
 
 @mixin accent-font {
   font-family: "Rostack";

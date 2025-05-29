@@ -33,7 +33,7 @@
 }
 
 .event-month {
-  padding: 8px 0;
+  padding: 4px 0;
   width: 100%;
   background-color: styles.$yellow;
   justify-self: start;
@@ -50,8 +50,16 @@
   height: 100%;
 }
 
+.event-month > p,
+.event-day > p {
+  font-family: styles.$accent-font;
+  font-size: styles.$font-lg !important;
+}
+
 .event-preview-title {
   text-transform: uppercase;
+  font-family: styles.$accent-font;
+  font-size: styles.$font-lg !important;
 }
 
 .event-preview-date,
