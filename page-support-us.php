@@ -11,7 +11,7 @@ get_header();
         </section>
         <section id='sponsors-text'>
             <p><?php the_field('support_text'); ?></p>
-            <p class='email'></strong><?php the_field('support_email'); ?></p>
+            <a class='email' href='mailto:<?php the_field('support_email'); ?>'></strong><?php the_field('support_email'); ?></a>
         </section>
     <?php endwhile; ?>
     <section id='sponsors-list'>
