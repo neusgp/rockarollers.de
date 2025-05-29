@@ -27,7 +27,6 @@
         </div>
         <div class='team-section-fotos'>
             <div class='scroll-icon'>
-                <i class='fa fa-angle-left'></i>
                 <i class='fa fa-angle-right'></i>
             </div>
             <div id='horizontal-scroll'>

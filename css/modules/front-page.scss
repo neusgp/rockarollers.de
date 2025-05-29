@@ -39,7 +39,8 @@
 #team-section {
   flex-direction: row !important;
   background-color: styles.$light-yellow;
-  gap: 20px;
+  gap: 40px;
+  padding-right: 0px !important;
 }
 
 .team-section-text {
@@ -65,18 +66,16 @@
 }
 
 .member-foto {
-  width: 260px;
+  height: 450px;
   display: inline-block;
-  border-radius: 6px;
 }
 
 .scroll-icon {
   position: absolute;
   z-index: 10;
   top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
-  right: 0;
+  right: 20px;
+  transform: translateY(-50%);
   background-color: styles.$yellow;
   border-radius: 100%;
   height: 40px;
