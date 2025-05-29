@@ -59,10 +59,6 @@ a:hover,
   padding: 20px;
 }
 
-.main-menu-header a:hover {
-  color: styles.$yellow;
-}
-
 .mobile-menu {
   z-index: 20;
   display: none;
@@ -108,12 +104,25 @@ a:hover,
   display: flex;
   flex-direction: column;
   gap: 16px;
-  color: white !important;
   font-size: 24px !important;
 }
 
 .show {
   display: flex !important;
+}
+
+//TEXT COLORS MENU
+
+.main-menu-header a:hover {
+  color: styles.$yellow !important;
+}
+
+.main-menu-header .current-menu-item > a {
+  color: styles.$yellow;
+}
+
+.main-menu-header .current-menu-item .sub-menu .current-menu-item > a {
+  color: white;
 }
 
 @media only screen and (max-width: 1100px) {
