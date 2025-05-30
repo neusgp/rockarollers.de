@@ -87,6 +87,7 @@ a:hover,
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  color: white;
 }
 
 .main-menu-mobile li {
@@ -96,7 +97,6 @@ a:hover,
 }
 
 .mobile-menu-main-item {
-  color: styles.$yellow;
   font-size: 32px;
 }
 
@@ -112,7 +112,6 @@ a:hover,
 }
 
 //TEXT COLORS MENU
-
 .main-menu-header a:hover {
   color: styles.$yellow !important;
 }

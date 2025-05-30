@@ -70,7 +70,7 @@ section {
 
 h1 {
   font-size: 80px !important;
-  background-color: black;
+  background: rgba(0, 0, 0, 0.64);
 }
 
 h2 {
@@ -90,6 +90,6 @@ p {
   font-size: styles.$font-md !important;
 }
 
-// section p {
-//   line-height: 1.5 !important;
-// }
+.paragraph {
+  line-height: 1.5 !important;
+}
