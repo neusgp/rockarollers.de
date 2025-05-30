@@ -7,7 +7,7 @@
         <?php while (have_posts()) : the_post(); ?>
             <img class='background-image' src='<?php the_field('hero_background_image'); ?>' />
             <h1 class='title'><?php the_field('hero_section_title'); ?></h1>
-            <p class='text'><?php the_field('hero_section_text'); ?></p>
+            <p class='text paragraph'><?php the_field('hero_section_text'); ?></p>
             <div class='action-buttons-container'>
                 <a href='<?php the_field('link_hero_button_1'); ?>/#about-roller-derby' class='primary-button-white'><?php the_field('label_hero_button_1'); ?></a>
                 <a href='<?php the_field('link_hero_button_2'); ?>' class='primary-button-yellow'><?php the_field('label_hero_button_2'); ?></a>
@@ -22,7 +22,7 @@
     <section id='team-section' class='section'>
         <div class='team-section-text'>
             <h2><?php the_field('team_section_title'); ?></h2>
-            <p><?php the_field('team_section_text'); ?></p>
+            <p class='paragraph'><?php the_field('team_section_text'); ?></p>
             <a href='<?php the_field('link_team_button'); ?>' class='primary-button-yellow'><?php the_field('label_team_button'); ?></a>
         </div>
         <div class='team-section-fotos'>

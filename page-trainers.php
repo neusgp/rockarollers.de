@@ -7,7 +7,7 @@ get_header();
     <section id='team-title'>
         <?php while (have_posts()) : the_post(); ?>
             <h2 class='team-title'><?php the_title(); ?></h2>
-            <p><?php the_field('text'); ?></p>
+            <p class='paragraph'><?php the_field('text'); ?></p>
         <?php endwhile; ?>
         <div class='members'>
             <?php

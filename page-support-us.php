@@ -10,7 +10,7 @@ get_header();
             <h2><?php the_title(); ?></h2>
         </section>
         <section id='sponsors-text'>
-            <p><?php the_field('support_text'); ?></p>
+            <p class='paragraph'><?php the_field('support_text'); ?></p>
             <a class='email' href='mailto:<?php the_field('support_email'); ?>'></strong><?php the_field('support_email'); ?></a>
         </section>
     <?php endwhile; ?>
@@ -32,7 +32,6 @@ get_header();
             ?>
         </div>
     </section>
-
 </div>
 <?php
 
