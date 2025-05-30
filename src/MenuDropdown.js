@@ -5,7 +5,7 @@ if (menuItems) {
   let link;
 
   for (let item of menuItems) {
-    item.addEventListener("mouseenter", (e) => {
+    item.addEventListener("mouseenter", () => {
       dropdown = item.querySelector(".sub-menu");
       link = item.querySelector("a");
       console.log(dropdown);
