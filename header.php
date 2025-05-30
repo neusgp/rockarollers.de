@@ -33,7 +33,7 @@
                 <i class='fa fa-close close-button'></i>
                 <?php
                 wp_nav_menu(array(
-                    'depth' => 2,
+                    'depth' => 1,
                     'theme_location' => 'mobile',
                     'menu_class' => 'main-menu-mobile menu'
                 ));
