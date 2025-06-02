@@ -12,9 +12,4 @@ $font-sm: 14px;
 $font-md: 18px;
 $font-lg: 24px;
 
-$accent-font: "Rostack", sans-serif;
-
-@mixin accent-font {
-  font-family: "Rostack";
-  letter-spacing: 4%;
-}
+$accent-font: "Fugaz One", sans-serif;

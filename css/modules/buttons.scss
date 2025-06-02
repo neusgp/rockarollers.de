@@ -1,15 +1,14 @@
 @use "constants" as styles;
 
 @mixin button {
-  padding: 18px 32px;
+  padding: 14px 32px;
   border-radius: 10px;
   text-transform: uppercase;
   color: styles.$soft-black;
   width: max-content;
   transition: background-color, 0.3s;
-  font-family: "Rostack";
-  font-size: 26px;
-  letter-spacing: 1px;
+  font-family: "Fugaz One";
+  font-size: 22px;
 }
 
 .primary-button-white {

@@ -14,16 +14,24 @@
 
   color: white;
   overflow: hidden;
+  cursor: url("http://rockarollers.local/wp-content/uploads/2025/06/jammer-cursor.png"),
+    auto;
 }
 
 #hero-section .title {
   text-align: center;
-  padding: 8px 16px;
+  background-image: url("http://rockarollers.local/wp-content/uploads/2025/06/title-background.png");
+  padding: 40px 100px;
+  background-size: cover;
+  background-position: center;
 }
 
 #hero-section .text {
-  background: rgba(0, 0, 0, 0.64);
-  padding: 8px 16px;
+  width: 60%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px !important;
 }
 
 .action-buttons-container {
@@ -63,11 +71,14 @@
   white-space: nowrap;
   display: flex;
   gap: 20px;
+  padding: 12px;
 }
 
 .member-foto {
   height: 450px;
   display: inline-block;
+  box-shadow: 11px 10px 13px -9px rgba(0, 0, 0, 0.26);
+  border-radius: 4px;
 }
 
 .scroll-icon {

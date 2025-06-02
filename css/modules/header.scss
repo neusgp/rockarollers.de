@@ -1,21 +1,21 @@
-header {
-  position: absolute;
-  z-index: 10;
-  width: 100%;
+@use "constants" as styles;
 
+header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0px 40px;
   align-items: center;
-  height: 100px;
+  height: 80px;
 
-  background: rgba(0, 0, 0, 0.64);
+  background: styles.$soft-black;
   color: white;
 }
 
 .logo {
   position: absolute;
-  top: 20px;
+  z-index: 5;
+  transform: translateY(30%);
 }
 
 .logo-section {

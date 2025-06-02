@@ -15,6 +15,7 @@
 @use "./modules/teams.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 
 @font-face {
   font-family: "Rostack";
@@ -70,20 +71,19 @@ section {
 
 h1 {
   font-size: 80px !important;
-  background: rgba(0, 0, 0, 0.64);
+  padding: 10px;
 }
 
 h2 {
-  font-size: 60px !important;
+  font-size: 48px !important;
 }
 
 h1,
 h2 {
-  font-family: "Rostack";
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-family: "Chinese Rocks", sans-serif;
   font-weight: 400 !important;
-  line-height: 80% !important;
+  text-transform: uppercase;
+  line-height: 100% !important;
 }
 
 p {
@@ -92,4 +92,5 @@ p {
 
 .paragraph {
   line-height: 1.5 !important;
+  font-weight: 600;
 }
