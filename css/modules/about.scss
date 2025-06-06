@@ -1,18 +1,7 @@
 @use "constants" as styles;
 
-#about-roller-derby,
-#about-rdk {
-  gap: 40px;
-}
-
 #about-roller-derby {
   background-color: styles.$light-yellow;
-}
-
-.about-roller-derby-content,
-.about-rdk-content {
-  display: flex;
-  gap: 40px;
 }
 
 .about-roller-derby-content img {
@@ -22,14 +11,12 @@
 
 .about-interesting-links {
   margin-top: 32px;
-  display: flex;
-  gap: 40px;
 }
 
 .about-interesting-links img {
   width: 260px;
-  transition: opacity 0.4s;
   border-radius: 20px;
+  transition: opacity 0.4s;
 }
 
 .about-interesting-links img:hover {
