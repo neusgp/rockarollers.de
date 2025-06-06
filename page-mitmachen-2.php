@@ -10,13 +10,13 @@ get_header();
             <h2><?php the_title(); ?></h2>
         </section>
         <!-- INFOS -->
-        <section id='infos'>
-            <div class='flex-column gap'>
+        <section id='infos' class='gap-lg'>
+            <div class='flex-column gap-sm'>
                 <h2><?php the_field('mitmachen_newbiekurs_title'); ?></h2>
                 <p class='paragraph'><?php the_field('mitmachen_newbiekurs_text'); ?></p>
                 <a href='<?php the_field('mitmachen_newbiekurs_button_link'); ?>' class='link-button'><?php the_field('mitmachen_newbiekurs_button_label'); ?> <i class='fa fa-angle-right'></i></a>
             </div>
-            <div class='flex-column gap'>
+            <div class='flex-column gap-sm'>
                 <h2><?php the_field('mitmachen_trainings_title'); ?> </h2>
                 <p class='paragraph'><?php the_field('mitmachen_trainings_text'); ?></p>
                 <a href='mailto:<?php the_field('mitmachen_trainings_button_link'); ?>' class='link-button'><?php the_field('mitmachen_trainings_button_label'); ?> <i class='fa fa-angle-right'></i></a>
@@ -29,7 +29,7 @@ get_header();
         <?php endwhile; ?>
         <?php
         $trainingEventsList = new WP_Query(array('post_type' => 'event')); ?>
-        <div class='trainings-preview-list flex-row'>
+        <div class='trainings-preview-list flex-row gap-sm'>
             <?php
             while ($trainingEventsList->have_posts()) {
                 if (!$trainingEventsList->have_posts()) { ?>

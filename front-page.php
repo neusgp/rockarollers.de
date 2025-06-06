@@ -8,7 +8,7 @@
             <img class='background-image' src='<?php the_field('hero_background_image'); ?>' />
             <h1 class='title'><?php the_field('hero_section_title'); ?></h1>
             <p class='text paragraph'><?php the_field('hero_section_text'); ?></p>
-            <div class='action-buttons-container flex-row-aligned'>
+            <div class='action-buttons-container flex-row-aligned gap-sm'>
                 <a href='<?php the_field('link_hero_button_1'); ?>/#about-roller-derby' class='primary-button-white'><?php the_field('label_hero_button_1'); ?></a>
                 <a href='<?php the_field('link_hero_button_2'); ?>' class='primary-button-yellow'><?php the_field('label_hero_button_2'); ?></a>
             </div>
@@ -29,7 +29,7 @@
             <div class='scroll-icon flex-centered'>
                 <i class='fa fa-angle-right'></i>
             </div>
-            <div id='horizontal-scroll' class='flex-row'>
+            <div id='horizontal-scroll' class='flex-row gap-sm'>
                 <?php
                 $homePageMembersList = new WP_Query(array('post_type' => 'member', 'posts_per_page' => -1));
                 if (!$homePageMembersList->have_posts()) {
@@ -53,7 +53,7 @@
             <img class='background-image' src='<?php the_field('events_background_image'); ?>' />
             <h2><?php the_field('events_section_title'); ?> <span class='yellow-highlight'><?php the_field('events_section_year'); ?></span></h2>
         <?php endwhile; ?>
-        <div class='events-preview-list flex-column'>
+        <div class='events-preview-list flex-column gap-sm'>
             <?php
             $homePageEventList = new WP_Query(array('post_type' => 'event', 'posts_per_page' => -1));
             while ($homePageEventList->have_posts()) {
@@ -63,7 +63,7 @@
                 }
                 $homePageEventList->the_post();
                 if (get_field('type') === 'event') { ?>
-                    <div class='event-preview flex-row'>
+                    <div class='event-preview flex-row gap-sm'>
                         <div class='event-preview-date flex-column'>
                             <?php
                             //separate month and day

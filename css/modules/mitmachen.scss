@@ -1,9 +1,5 @@
 @use "constants" as styles;
 
-#infos div {
-  gap: 20px;
-}
-
 #trainingszeiten {
   position: relative;
   padding: 100px 320px !important;
@@ -28,9 +24,10 @@
 .training-title {
   width: 100%;
   height: 80px;
+  font-family: styles.$accent-font;
+  text-transform: uppercase;
   background-color: styles.$yellow;
-  font-family: "Rostack", sans-serif;
-  font-size: 28px;
+  font-size: styles.$font-lg;
 }
 
 .training-infos {
