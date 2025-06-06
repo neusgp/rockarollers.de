@@ -16,12 +16,11 @@ a:hover,
 }
 
 .main-menu-header {
-  display: flex;
   gap: 64px;
   text-transform: uppercase;
   font-family: "Fugaz One";
   font-weight: 200 !important;
-  font-size: 18px;
+  font-size: styles.$font-md;
 }
 
 .menu-2025-main-menu-container,
@@ -31,7 +30,6 @@ a:hover,
 }
 
 .social {
-  display: flex;
   gap: 20px;
 }
 
@@ -57,19 +55,18 @@ a:hover,
 .mobile-menu {
   z-index: 20;
   display: none;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
   background-color: black;
-
-  flex-direction: column;
   width: 100vw;
 
   padding: 40px 40px;
   text-transform: uppercase;
-  font-family: "Rostack";
+  font-family: styles.$accent-font;
   font-weight: 400 !important;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .close-button {
@@ -78,17 +75,9 @@ a:hover,
 }
 
 .main-menu-mobile {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   color: white;
-}
-
-.main-menu-mobile li {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .mobile-menu-main-item {
@@ -102,12 +91,24 @@ a:hover,
   font-size: 24px !important;
 }
 
+.mobile-menu-social-item,
+.mobile-menu-social-item a,
+.mobile-menu-social-item .dashicons {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu-social-item .dashicons {
+  font-size: 40px !important;
+}
+
 .show {
   display: flex !important;
 }
 
 //TEXT COLORS MENU
-nav a {
+nav a,
+.social-header a {
   color: white;
 }
 

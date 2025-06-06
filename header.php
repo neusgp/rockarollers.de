@@ -17,7 +17,7 @@
         wp_nav_menu(array(
             'depth' => 1,
             'theme_location' => 'social',
-            'menu_class' => 'social social-header menu'
+            'menu_class' => 'social social-header menu flex-row'
         ));
         ?>
         <nav>
@@ -25,7 +25,7 @@
             wp_nav_menu(array(
                 'depth' => 2,
                 'theme_location' => 'header',
-                'menu_class' => 'main-menu-header menu'
+                'menu_class' => 'main-menu-header menu flex-row'
             ));
             ?>
             <p><i class='fa fa-bars hamburger-menu-icon'></i></p>
@@ -35,7 +35,7 @@
                 wp_nav_menu(array(
                     'depth' => 1,
                     'theme_location' => 'mobile',
-                    'menu_class' => 'main-menu-mobile menu'
+                    'menu_class' => 'main-menu-mobile menu flex-column'
                 ));
                 ?>
             </div>
