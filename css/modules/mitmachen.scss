@@ -1,40 +1,27 @@
 @use "constants" as styles;
 
-#infos {
-  display: flex;
-  gap: 40px;
-}
-
 #infos div {
-  display: flex;
-  flex-direction: inherit;
   gap: 20px;
 }
 
 #trainingszeiten {
   position: relative;
-  gap: 40px;
   padding: 100px 320px !important;
   overflow: hidden;
 }
+
 #trainingszeiten h2 {
   color: white;
   align-self: center;
 }
 
 .trainings-preview-list {
-  display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
 .trainingzeit-preview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 240px;
-
   flex: 1;
 }
 
@@ -44,29 +31,20 @@
   background-color: styles.$yellow;
   font-family: "Rostack", sans-serif;
   font-size: 28px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .training-infos {
-  text-align: center;
   width: 100%;
   height: 100%;
   background-color: white;
-  display: flex;
-  flex-direction: inherit;
   justify-content: space-around;
+  text-align: center;
   padding: 8px 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .training-details {
-  display: flex;
-  flex-direction: column;
   gap: 6px;
 }
 
