@@ -22,12 +22,12 @@
 
 #team-links a p {
   width: 100%;
-  padding: 4px 8px;
+  padding: 4px 16px;
   background: rgba(0, 0, 0, 0.64);
   color: white;
   text-transform: uppercase;
-  font-family: "Rostack", sans-serif;
-  font-size: 32px !important;
+  font-family: styles.$accent-font;
+  font-size: styles.$font-lg !important;
   font-weight: 400;
   align-self: end;
 }
