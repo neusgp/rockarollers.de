@@ -5,13 +5,6 @@
   width: 100%;
   height: 840px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 40px;
-
   color: white;
   overflow: hidden;
   cursor: url("http://rockarollers.local/wp-content/uploads/2025/06/jammer-cursor.png"),
@@ -19,9 +12,9 @@
 }
 
 #hero-section .title {
+  padding: 40px 100px;
   text-align: center;
   background-image: url("http://rockarollers.local/wp-content/uploads/2025/06/title-background.png");
-  padding: 40px 100px;
   background-size: cover;
   background-position: center;
 }
@@ -35,9 +28,8 @@
 }
 
 .action-buttons-container {
-  display: flex;
-  align-items: center;
   gap: 20px;
+  min-width: max-content;
 }
 
 #news-section h2 {
@@ -45,18 +37,12 @@
 }
 
 #team-section {
-  flex-direction: row !important;
   background-color: styles.$light-yellow;
-  gap: 40px;
   padding-right: 0px !important;
 }
 
 .team-section-text {
-  display: flex;
-  flex-direction: column;
   flex: 1;
-
-  gap: 40px;
 }
 
 .team-section-fotos {
@@ -91,10 +77,6 @@
   border-radius: 100%;
   height: 40px;
   width: 40px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 6px;
 }
 
@@ -112,19 +94,12 @@
   color: white;
 }
 
-#sponsors-section {
-  display: flex;
-  gap: 60px;
-}
 #sponsors-section h2 {
   text-align: center;
 }
 
 .sponsors-list {
-  display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
 }
 
 .sponsors-list img {

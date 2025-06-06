@@ -3,12 +3,12 @@
 
 <div id='content'>
     <!-- HERO -->
-    <section id='hero-section'>
+    <section id='hero-section' class='flex-column flex-centered gap'>
         <?php while (have_posts()) : the_post(); ?>
             <img class='background-image' src='<?php the_field('hero_background_image'); ?>' />
             <h1 class='title'><?php the_field('hero_section_title'); ?></h1>
             <p class='text paragraph'><?php the_field('hero_section_text'); ?></p>
-            <div class='action-buttons-container'>
+            <div class='action-buttons-container flex-row-aligned'>
                 <a href='<?php the_field('link_hero_button_1'); ?>/#about-roller-derby' class='primary-button-white'><?php the_field('label_hero_button_1'); ?></a>
                 <a href='<?php the_field('link_hero_button_2'); ?>' class='primary-button-yellow'><?php the_field('label_hero_button_2'); ?></a>
             </div>
@@ -19,17 +19,17 @@
         <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
     </section>
     <!-- TEAM -->
-    <section id='team-section' class='section'>
-        <div class='team-section-text'>
+    <section id='team-section' class='section flex-row gap'>
+        <div class='team-section-text flex-column gap'>
             <h2><?php the_field('team_section_title'); ?></h2>
             <p class='paragraph'><?php the_field('team_section_text'); ?></p>
             <a href='<?php the_field('link_team_button'); ?>' class='primary-button-yellow'><?php the_field('label_team_button'); ?></a>
         </div>
         <div class='team-section-fotos'>
-            <div class='scroll-icon'>
+            <div class='scroll-icon flex-centered'>
                 <i class='fa fa-angle-right'></i>
             </div>
-            <div id='horizontal-scroll'>
+            <div id='horizontal-scroll' class='flex-row'>
                 <?php
                 $homePageMembersList = new WP_Query(array('post_type' => 'member', 'posts_per_page' => -1));
                 if (!$homePageMembersList->have_posts()) {
@@ -53,7 +53,7 @@
             <img class='background-image' src='<?php the_field('events_background_image'); ?>' />
             <h2><?php the_field('events_section_title'); ?> <span class='yellow-highlight'><?php the_field('events_section_year'); ?></span></h2>
         <?php endwhile; ?>
-        <div class='events-preview-list'>
+        <div class='events-preview-list flex-column'>
             <?php
             $homePageEventList = new WP_Query(array('post_type' => 'event', 'posts_per_page' => -1));
             while ($homePageEventList->have_posts()) {
@@ -63,8 +63,8 @@
                 }
                 $homePageEventList->the_post();
                 if (get_field('type') === 'event') { ?>
-                    <div class='event-preview'>
-                        <div class='event-preview-date'>
+                    <div class='event-preview flex-row'>
+                        <div class='event-preview-date flex-column'>
                             <?php
                             //separate month and day
                             $date = get_field('date');
@@ -72,17 +72,17 @@
                             $stringParsedDate = implode(' ', $parsedDate);
                             $finalParsedData = explode(' ', $stringParsedDate);
                             ?>
-                            <div class='event-month'>
+                            <div class='event-month flex-centered'>
                                 <p><?php echo $finalParsedData[0] ?></p>
                             </div>
-                            <div class='event-day'>
+                            <div class='event-day flex-centered'>
                                 <p><?php echo $finalParsedData[1] ?></p>
                             </div>
                         </div>
 
-                        <div class='event-preview-info'>
+                        <div class='event-preview-info flex-column-justified'>
                             <p class='event-preview-title'><?php the_field('title') ?></p>
-                            <div class='event-preview-place-time'>
+                            <div class='event-preview-place-time flex-row gap'>
                                 <p><i class='fa fa-map-marker'></i> <?php the_field('place') ?></p>
                                 <p><i class='fa fa-clock-o'></i> <?php the_field('time') ?></p>
                             </div>
@@ -99,7 +99,7 @@
         <?php while (have_posts()) : the_post(); ?>
             <h2><?php the_field('sponsors_section_title'); ?></h2>
         <?php endwhile; ?>
-        <div class='sponsors-list'>
+        <div class='sponsors-list flex-row flex-centered gap'>
             <?php
             $homePageSponsorsList = new WP_Query(array('post_type' => 'sponsor', 'posts_per_page' => -1));
             if (!$homePageSponsorsList->have_posts()) {
