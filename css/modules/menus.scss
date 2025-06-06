@@ -4,10 +4,6 @@
   list-style-type: none;
 }
 
-.main-menu-header .current-menu-item .sub-menu .current-menu-item > a {
-  color: white;
-}
-
 .hamburger-menu-icon {
   display: none;
   font-size: 36px;
@@ -111,6 +107,10 @@ a:hover,
 }
 
 //TEXT COLORS MENU
+nav a {
+  color: white;
+}
+
 .main-menu-header a:hover {
   color: styles.$yellow !important;
 }
