@@ -19,7 +19,7 @@
         <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
     </section>
     <!-- TEAM -->
-    <section id='team-section' class='section flex-row gap'>
+    <section id='team-section' class='section flex-row gap-sm'>
         <div class='team-section-text flex-column gap'>
             <h2><?php the_field('team_section_title'); ?></h2>
             <p class='paragraph'><?php the_field('team_section_text'); ?></p>
@@ -109,7 +109,7 @@
             <?php
             while ($homePageSponsorsList->have_posts()) {
                 $homePageSponsorsList->the_post(); ?>
-                <img class='sponsor-logo' src='<?php the_field('logo'); ?>' />
+                <a href='<?php the_field('link'); ?>' class='sponsor link-hover'><img class='sponsor-logo' src='<?php the_field('logo'); ?>' /></a>
             <?php
             }
             ?>

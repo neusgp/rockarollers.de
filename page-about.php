@@ -14,7 +14,7 @@ get_header();
             <div class='about-roller-derby-content flex-row gap'>
                 <div>
                     <p class='paragraph'><?php the_field('about_roller_derby_text'); ?></p>
-                    <div class='about-interesting-links flex-row gap'>
+                    <div class='about-interesting-links flex-row gap link-hover'>
                         <a href=<?php the_field('interesting_link_1'); ?>> <img src='<?php the_field('interesting_link_1_image'); ?>' /></a>
                         <a href=<?php the_field('interesting_link_2'); ?>> <img src='<?php the_field('interesting_link_2_image'); ?>' /></a>
                     </div>

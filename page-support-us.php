@@ -26,7 +26,7 @@ get_header();
             <?php
             while ($homePageSponsorsList->have_posts()) {
                 $homePageSponsorsList->the_post(); ?>
-                <img class='sponsor-logo' src='<?php the_field('logo'); ?>' />
+                <a href='<?php the_field('link'); ?>' class='sponsor link-hover'><img class='sponsor-logo' src='<?php the_field('logo'); ?>' /></a>
             <?php
             }
             ?>

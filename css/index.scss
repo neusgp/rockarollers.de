@@ -120,6 +120,13 @@ p {
   line-height: 1.5 !important;
   font-weight: 500;
 }
+.sponsor {
+  transition: opacity 0.4s;
+}
+
+.link-hover:hover {
+  opacity: 70%;
+}
 
 .gap {
   gap: 40px;
