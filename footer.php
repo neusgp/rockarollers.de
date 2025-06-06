@@ -36,7 +36,7 @@
             wp_nav_menu(array(
                 'depth' => 1,
                 'theme_location' => 'social',
-                'menu_class' => 'social menu'
+                'menu_class' => 'social menu flex-row'
             ));
             ?>
         </div>
