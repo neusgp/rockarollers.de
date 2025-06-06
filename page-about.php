@@ -9,7 +9,7 @@ get_header();
             <img class='background-image' src='<?php the_field('about_banner_image'); ?>' />
             <h2><?php the_title(); ?></h2>
         </section>
-        <section id='about-roller-derby gap'>
+        <section id='about-roller-derby'>
             <h2><?php the_field('about_roller_derby_title'); ?></h2>
             <div class='about-roller-derby-content flex-row gap'>
                 <div>
@@ -22,7 +22,7 @@ get_header();
                 <img src='<?php the_field('about_roller_derby_image'); ?>' />
             </div>
         </section>
-        <section id='about-rdk gap'>
+        <section id='about-rdk'>
             <h2><?php the_field('about_rdk_title'); ?></h2>
             <div class='about-rdk-content flex-row gap'>
                 <?php echo do_shortcode('[modula id="4140"]'); ?>
