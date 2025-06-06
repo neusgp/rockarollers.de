@@ -2,25 +2,17 @@
 
 header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 40px;
-  align-items: center;
   height: 80px;
-
-  background: styles.$soft-black;
+  padding: 0px 40px;
+  justify-content: space-between;
   color: white;
+  background: styles.$soft-black;
 }
 
 .logo {
   position: absolute;
   z-index: 5;
   transform: translateY(30%);
-}
-
-.logo-section {
-  display: flex;
-  gap: 20px;
 }
 
 .social-header {

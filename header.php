@@ -9,7 +9,7 @@
 </head>
 
 <body <?php body_class() ?>>
-    <header id='header'>
+    <header id='header' class='flex-row-aligned'>
         <a class='logo' href='http://rockarollers.local/'>
             <img src='http://rockarollers.local/wp-content/uploads/2014/12/rockarollers_logo.png' high='160' width='160' alt='Rockarollers Logo' aria-label='Rockarollers Logo' />
         </a>
