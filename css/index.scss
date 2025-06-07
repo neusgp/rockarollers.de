@@ -17,13 +17,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 
 @font-face {
-  font-family: "Rostack";
-  src: url(../fonts/rostack.otf) format("otf");
-}
-
-@font-face {
   font-family: "Chinese Rocks";
-  src: url(../fonts/chinese_rocks.ttf) format("ttf");
+  src: url(../fonts/chinese_rocks.woff) format("woff");
+  font-display: swap;
 }
 
 * {
@@ -115,9 +111,13 @@ p {
   align-items: center;
 }
 
+.align-end {
+  justify-self: flex-end;
+}
+
 .paragraph {
   color: styles.$softer-black;
-  line-height: 1.5 !important;
+  line-height: 1.8 !important;
   font-weight: 500;
 }
 .sponsor {
