@@ -19,7 +19,7 @@ get_header();
                         <a class='link-hover' href=<?php the_field('interesting_link_2'); ?>> <img src='<?php the_field('interesting_link_2_image'); ?>' /></a>
                     </div>
                 </div>
-                <img src='<?php the_field('about_roller_derby_image'); ?>' />
+                <img class='track-image' src='<?php the_field('about_roller_derby_image'); ?>' />
             </div>
         </section>
         <section id='about-rdk'>

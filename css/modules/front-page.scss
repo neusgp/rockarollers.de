@@ -3,7 +3,7 @@
 #hero-section {
   position: relative;
   width: 100%;
-  height: 840px;
+  height: 820px;
 
   color: white;
   overflow: hidden;
@@ -46,8 +46,8 @@
 }
 
 .team-section-fotos {
+  overflow: hidden;
   position: relative;
-  width: 380px;
   flex: 2;
 }
 
@@ -111,4 +111,28 @@
 
 .yellow-highlight {
   color: styles.$yellow !important;
+}
+
+@media only screen and (max-width: 1100px) {
+  #hero-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #hero-section .title {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #hero-section .text {
+    width: 100%;
+  }
+
+  .action-buttons-container {
+    flex-direction: column !important;
+  }
+  #team-section {
+    flex-direction: column !important;
+  }
+  .scroll-icon {
+    right: 10px;
+  }
 }

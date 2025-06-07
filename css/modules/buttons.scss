@@ -34,3 +34,9 @@
 .primary-button-yellow:hover {
   color: styles.$hover-purple;
 }
+
+@media only screen and (max-width: 1100px) {
+  .primary-button-yellow {
+    align-self: center !important;
+  }
+}
