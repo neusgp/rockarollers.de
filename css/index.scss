@@ -125,6 +125,14 @@ p {
   transition: opacity 0.4s;
 }
 
+.misc-info {
+  margin-top: 80px;
+}
+
+.misc-info p {
+  font-size: styles.$font-sm !important;
+}
+
 .link-hover:hover {
   opacity: 70%;
 }
