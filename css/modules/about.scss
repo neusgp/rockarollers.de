@@ -13,11 +13,14 @@
   margin-top: 32px;
 }
 
+.about-interesting-links a {
+  transition: opacity 0.4s;
+}
+
 .about-interesting-links img {
   align-self: flex-start;
   width: 260px;
   border-radius: 20px;
-  transition: opacity 0.4s;
 }
 
 .about-rdk-content p {

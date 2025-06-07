@@ -42,13 +42,17 @@
 }
 
 #team-title {
-  padding-top: 240px;
+  padding-top: 180px;
   gap: 40px;
 }
 
 .members {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, 300.8px) !important;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   justify-content: center !important;
-  width: 100%;
+}
+
+.members img {
+  width: 240px;
+  height: auto;
 }

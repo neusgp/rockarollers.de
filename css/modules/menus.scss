@@ -16,7 +16,6 @@ a:hover,
 }
 
 .main-menu-header {
-  position: relative;
   gap: 64px;
   text-transform: uppercase;
   font-family: "Fugaz One";
@@ -53,11 +52,13 @@ a:hover,
   z-index: 20;
   display: none;
   flex-direction: column;
+  gap: 40px;
   position: absolute;
   top: 0px;
   left: 0px;
   background-color: black;
   width: 100vw;
+  height: 100vh;
 
   padding: 20px 40px;
   text-transform: uppercase;
@@ -107,6 +108,7 @@ a:hover,
 nav a,
 .social-header a {
   color: white;
+  transition: color 0.4s;
 }
 
 .main-menu-header a:hover {
