@@ -9,7 +9,7 @@ get_header();
             <h2 class='team-title'><?php the_title(); ?></h2>
             <p class='paragraph'><?php the_field('text'); ?></p>
         <?php endwhile; ?>
-        <div class='members'>
+        <div class='members gap-sm'>
             <?php
             $homePageMembersList = new WP_Query(array('post_type' => 'member', 'posts_per_page' => -1));
             if (!$homePageMembersList->have_posts()) {

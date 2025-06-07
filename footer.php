@@ -1,6 +1,10 @@
 <footer class='flex-column'>
     <div class='menu-footer flex-row'>
-        <img class='wftda-logo' src='https://rockarollers.de/wp-content/uploads/2015/11/WFTDA_logo.png' width='132' alt='WFTDA Logo' aria-label='Rockarollers Logo' />
+
+        <div class='scc-logo-container flex-row gap'>
+            <img class='wftda-logo' src='https://rockarollers.de/wp-content/uploads/2015/11/WFTDA_logo.png' width='132' alt='WFTDA Logo' aria-label='Rockarollers Logo' />
+            <img class='ssc-logo' alt='SSC Karlsruhe Logo' src='http://rockarollers.local/wp-content/uploads/2025/06/SSC_Karlsruhe_logo.svg_.png' />
+        </div>
         <div class='menu-section-footer flex-column gap'>
             <h3>Kontakt</h3>
             <?php
@@ -40,8 +44,9 @@
             ));
             ?>
         </div>
+
     </div>
-    <div class='credits-footer flex-row'>
+    <div class=' credits-footer flex-row'>
         <p>© 2025 Neus Garcia für Roller Derby Karlsruhe</p>
         <?php
         wp_nav_menu(array(

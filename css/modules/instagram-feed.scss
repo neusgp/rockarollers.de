@@ -1,8 +1,8 @@
 #sbi_images {
   display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr !important;
-  grid-row: auto;
+  grid-template-columns: repeat(auto-fill, 360px) !important;
   gap: 40px !important;
+  justify-content: center !important;
 }
 
 //TODO: grid wrap! -> posts should appear under

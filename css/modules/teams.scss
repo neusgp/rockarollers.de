@@ -47,10 +47,8 @@
 }
 
 .members {
-  justify-items: center;
   display: grid !important;
+  grid-template-columns: repeat(auto-fit, 300.8px) !important;
+  justify-content: center !important;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr !important;
-  grid-row: auto;
-  row-gap: 40px;
 }

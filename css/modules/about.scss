@@ -5,8 +5,8 @@
 }
 
 .about-roller-derby-content img {
+  align-self: flex-start;
   width: 400px;
-  height: min-content;
 }
 
 .about-interesting-links {
@@ -14,6 +14,7 @@
 }
 
 .about-interesting-links img {
+  align-self: flex-start;
   width: 260px;
   border-radius: 20px;
   transition: opacity 0.4s;
