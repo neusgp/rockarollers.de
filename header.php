@@ -39,6 +39,22 @@
                     'menu_class' => 'main-menu-mobile menu flex-column'
                 ));
                 ?>
+                <div class='flex-column gap-sm'>
+                    <?php
+                    wp_nav_menu(array(
+                        'depth' => 1,
+                        'theme_location' => 'footer',
+                        'menu_class' => 'credits-menu-footer mobile-menu-credits menu flex-column gap-sm'
+                    ));
+                    ?>
+                    <?php
+                    wp_nav_menu(array(
+                        'depth' => 1,
+                        'theme_location' => 'presse',
+                        'menu_class' => 'main-menu-footer menu mobile-menu-credits flex-column gap-sm'
+                    ));
+                    ?>
+                </div>
             </div>
         </nav>
     </header>

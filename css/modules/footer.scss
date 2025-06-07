@@ -4,6 +4,7 @@
   padding: 46px 40px;
   background: styles.$yellow;
   gap: 80px;
+  flex-wrap: wrap-reverse;
 }
 
 .menu-section-footer {
@@ -20,6 +21,10 @@
   gap: 16px;
 }
 
+.logo-container {
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .ssc-logo {
   align-self: flex-start;
   width: 200px;
@@ -45,4 +50,7 @@
 }
 
 @media only screen and (max-width: 1100px) {
+  .mobile-hide {
+    display: none !important;
+  }
 }
