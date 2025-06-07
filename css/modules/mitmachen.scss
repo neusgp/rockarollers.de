@@ -2,7 +2,7 @@
 
 #trainingszeiten {
   position: relative;
-  padding: 100px 320px !important;
+  padding: 100px 320px;
   overflow: hidden;
 }
 
@@ -13,10 +13,13 @@
 
 .trainings-preview-list {
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
 .trainingzeit-preview {
+  max-width: 300px;
+  min-width: 200px;
   min-height: 240px;
   flex: 1;
 }
@@ -47,4 +50,13 @@
 
 .training-infos p {
   font-size: styles.$font-sm !important;
+}
+
+@media only screen and (max-width: 1100px) {
+  #banner {
+    height: 400px;
+  }
+  .background-image {
+    transform: translateX(-20%);
+  }
 }
