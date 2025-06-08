@@ -62,6 +62,18 @@ function rockarollers2025_post_types()
         ),
         'menu_icon' => 'dashicons-awards'
     ));
+    register_post_type('logo', array(
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Logos',
+            'add_new_item' => 'Add new Logo',
+            'edit_item' => 'Edit Logo',
+            'all_items' => 'All Logos',
+            'singular name' => 'logo'
+        ),
+        'menu_icon' => 'dashicons-format-image'
+    ));
 }
 
 add_action('init', 'rockarollers2025_post_types');
