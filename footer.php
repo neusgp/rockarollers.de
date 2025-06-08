@@ -4,7 +4,7 @@
             <img class='wftda-logo' src='https://rockarollers.de/wp-content/uploads/2015/11/WFTDA_logo.png' width='132' alt='WFTDA Logo' aria-label='Rockarollers Logo' />
             <img class='ssc-logo' alt='SSC Karlsruhe Logo' src='http://rockarollers.local/wp-content/uploads/2025/06/SSC_Karlsruhe_logo.svg_.png' />
         </div>
-        <div class='menu-section-footer flex-column gap-sm'>
+        <div class='menu-section-footer flex-column gap'>
             <h3>Kontakt</h3>
             <?php
             $kontakt_page_content = get_page_by_path('kontakt');
