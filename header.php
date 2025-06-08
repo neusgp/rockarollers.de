@@ -11,9 +11,27 @@
 
 <body <?php body_class() ?>>
     <header id='header' class='flex-row-aligned'>
-        <a class='logo' href='http://rockarollers.local/'>
-            <img src='http://rockarollers.local/wp-content/uploads/2014/12/rockarollers_logo.png' high='160' width='160' alt='Rockarollers Logo' aria-label='Rockarollers Logo' />
-        </a>
+        <?php
+        $logosList = new WP_Query(array('post_type' => 'logo', 'posts_per_page' => -1));
+        if (!$logosList->have_posts()) {
+        ?> <p>No members found</p>
+        <?php
+        } ?>
+        <?php
+        while ($logosList->have_posts()) {
+            $logosList->the_post();
+            $value = get_field('name');
+            if ($value === 'rockarollers') { ?>
+                <a class='logo' href='<?php the_field('link'); ?>'>
+                    <img src='<?php the_field('logo'); ?>' high='160' width='160' alt='Rockarollers Logo' aria-label='Rockarollers Logo' />
+                </a>
+            <?php
+            }
+            ?>
+        <?php
+        }
+        ?>
+
         <?php
         wp_nav_menu(array(
             'depth' => 1,
