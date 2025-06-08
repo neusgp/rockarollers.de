@@ -10,17 +10,16 @@
 }
 
 #team-links a {
-  width: 80%;
-  height: 300px;
   transition: opacity 0.4s;
-
+  width: 400px;
+  height: 220px;
   display: flex;
   align-items: end;
-
   border-radius: 8px;
 }
 
 #team-links a p {
+  position: absolute;
   width: 100%;
   padding: 4px 16px;
   background: rgba(0, 0, 0, 0.64);
@@ -29,7 +28,7 @@
   font-family: styles.$accent-font;
   font-size: styles.$font-lg !important;
   font-weight: 400;
-  align-self: end;
+  bottom: 0;
 }
 
 #team-links a:hover {
@@ -37,6 +36,7 @@
 }
 
 .team-link {
+  max-width: max-content;
   position: relative;
   overflow: hidden;
 }
@@ -63,5 +63,10 @@
   }
   #team-links a {
     height: 200px;
+    width: 80%;
+  }
+
+  #team-links a p {
+    font-size: styles.$font-md !important;
   }
 }
