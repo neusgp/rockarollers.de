@@ -67,16 +67,23 @@
                         <div class='event-preview-date flex-column'>
                             <?php
                             //separate month and day
-                            $date = get_field('date');
-                            $parsedDate = explode(',', $date);
+                            $rawDate = get_field('date');
+                            $parsedDate = explode(',', $rawDate);
                             $stringParsedDate = implode(' ', $parsedDate);
                             $finalParsedData = explode(' ', $stringParsedDate);
+                            $rawMonth = $finalParsedData[0];
+                            $day = $finalParsedData[1];
+                            if (strlen($rawMonth) > 4) {
+                                $date = substr($rawMonth, 0, 3);
+                            } else {
+                                $date = $rawMonth;
+                            }
                             ?>
                             <div class='event-month flex-centered'>
-                                <p><?php echo $finalParsedData[0] ?></p>
+                                <p><?php echo $date ?></p>
                             </div>
                             <div class='event-day flex-centered'>
-                                <p><?php echo $finalParsedData[1] ?></p>
+                                <p><?php echo $day ?></p>
                             </div>
                         </div>
 
