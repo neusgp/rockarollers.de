@@ -58,7 +58,7 @@ a:hover,
   left: 0px;
   background-color: black;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   padding: 10px 6%;
   text-transform: uppercase;
@@ -109,6 +109,10 @@ a:hover,
 
 .show {
   display: flex !important;
+}
+
+.hide {
+  display: none !important;
 }
 
 //TEXT COLORS MENU
