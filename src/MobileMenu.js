@@ -2,8 +2,6 @@ const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
 const content = document.querySelector("#content");
 const footer = document.querySelector("footer");
 
-console.log(content, footer);
-
 hamburgerIcon.addEventListener("click", () => {
   let mobileMenu;
   let closeButton;
