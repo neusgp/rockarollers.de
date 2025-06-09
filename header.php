@@ -36,7 +36,7 @@
         wp_nav_menu(array(
             'depth' => 1,
             'theme_location' => 'social',
-            'menu_class' => 'social social-header menu flex-row gap-sm'
+            'menu_class' => 'desktop-social social-header menu flex-row gap-sm'
         ));
         ?>
         <nav>
@@ -44,7 +44,7 @@
             wp_nav_menu(array(
                 'depth' => 2,
                 'theme_location' => 'header',
-                'menu_class' => 'main-menu-header menu flex-row'
+                'menu_class' => 'desktop-main-menu main-menu-header menu flex-row'
             ));
             ?>
             <p><i class='fa fa-bars hamburger-menu-icon'></i></p>
@@ -54,7 +54,14 @@
                 wp_nav_menu(array(
                     'depth' => 1,
                     'theme_location' => 'mobile',
-                    'menu_class' => 'main-menu-mobile menu flex-column'
+                    'menu_class' => 'mobile-main menu flex-column flex-centered gap'
+                ));
+                ?>
+                <?php
+                wp_nav_menu(array(
+                    'depth' => 1,
+                    'theme_location' => 'social',
+                    'menu_class' => 'mobile-social menu flex-centered gap-sm'
                 ));
                 ?>
                 <div class='flex-column gap-sm'>
@@ -65,6 +72,7 @@
                         'menu_class' => 'credits-menu-footer mobile-menu-credits menu flex-column gap-sm'
                     ));
                     ?>
+
                     <?php
                     wp_nav_menu(array(
                         'depth' => 1,

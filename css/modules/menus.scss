@@ -64,7 +64,6 @@ a:hover,
   text-transform: uppercase;
   font-family: styles.$accent-font;
   font-weight: 400 !important;
-  font-size: 20px;
 }
 
 .close-button {
@@ -78,12 +77,12 @@ a:hover,
   color: white;
 }
 
-.mobile-menu-credits {
-  align-items: center !important;
+.mobile-main {
+  font-size: styles.$font-lg;
 }
 
-.mobile-menu-main-item {
-  font-size: 32px;
+.mobile-menu-credits {
+  align-items: center !important;
 }
 
 .main-menu-mobile li .sub-menu {
@@ -93,14 +92,18 @@ a:hover,
   font-size: 24px !important;
 }
 
+.mobile-social {
+  height: 40px;
+}
+
 .mobile-menu-social-item,
-.mobile-menu-social-item a,
-.mobile-menu-social-item .dashicons {
+.mobile-social a,
+.mobile-social .dashicons {
   width: 40px;
   height: 40px;
 }
 
-.mobile-menu-social-item .dashicons {
+.mobile-social .dashicons {
   font-size: 40px !important;
 }
 
