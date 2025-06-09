@@ -7,14 +7,14 @@
 
   color: white;
   overflow: hidden;
-  cursor: url("http://rockarollers.local/wp-content/uploads/2025/06/jammer-cursor.png"),
+  cursor: url("http://rockarollers.de/wp-content/uploads/2025/06/jammer-cursor.png"),
     auto;
 }
 
 #hero-section .title {
   padding: 40px 100px;
   text-align: center;
-  background-image: url("http://rockarollers.local/wp-content/uploads/2025/06/title-background.png");
+  background-image: url("http://rockarollers.de/wp-content/uploads/2025/06/title-background.png");
   background-size: cover;
   background-position: center;
 }
@@ -133,7 +133,19 @@
   #team-section {
     flex-direction: column !important;
   }
+
+  #team-section .paragraph {
+    margin-right: 6%;
+  }
+  .member-foto {
+    height: 420px;
+  }
+
   .scroll-icon {
     right: 10px;
+  }
+
+  .sponsors-list img {
+    width: 180px;
   }
 }
