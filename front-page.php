@@ -26,7 +26,7 @@
             <a href='<?php the_field('link_team_button'); ?>' class='primary-button-yellow'><?php the_field('label_team_button'); ?></a>
         </div>
         <div class='team-section-fotos'>
-            <div class='scroll-icon flex-centered'>
+            <div id='scroll-right-button' class='scroll-icon flex-centered'>
                 <i class='fa fa-angle-right'></i>
             </div>
             <div id='horizontal-scroll' class='flex-row gap-sm'>
